@@ -31,4 +31,4 @@ Admin Username : nikola123 - Password : nikola123
 User Username : luke123 - Password : lukaluka123
 
 ## Šema baze podataka
-Slika: https://github.com/NBrzovan/ASP/blob/master/socialplatform.png
+Slika: https://github.com/NBrzovan/ProjekatASP/blob/master/socialplatform.png
