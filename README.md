@@ -26,9 +26,9 @@ davanje odgovora, praćenje tagova, tema i zajednica, lajkovanje i dislajkovanje
 * Uvid u audit logove i pretraga po opsegu datuma
 
 ## Kredencijali
-Admin Username : nikola123 - Password : nikola123
+Admin Email : nikola@gmail.com - Password : nikola123
 
-User Username : luke123 - Password : lukaluka123
+User Email : lukalukic@gmail.com - Password : lukaluka123
 
 ## Šema baze podataka
 Slika: https://github.com/NBrzovan/ProjekatASP/blob/master/socialplatform.png
