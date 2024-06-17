@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "mvYPVJhlvYIect/XMh7pPNL+PwhxT8BO4l/UNLGb4xI=",
+  "Source": "SocialPlatform.API",
+  "BasePath": "_content/SocialPlatform.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SocialPlatform.API\\wwwroot",
+      "Source": "SocialPlatform.API",
+      "ContentRoot": "C:\\Users\\Nikola\\Desktop\\ProjekatASP\\ASP\\SocialPlatform.API\\wwwroot\\",
+      "BasePath": "_content/SocialPlatform.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Nikola\\Desktop\\ProjekatASP\\ASP\\SocialPlatform.API\\wwwroot\\images\\b607b1a0-d4a9-4e51-8392-8326c82cb6d0.jpg",
+      "SourceId": "SocialPlatform.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nikola\\Desktop\\ProjekatASP\\ASP\\SocialPlatform.API\\wwwroot\\",
+      "BasePath": "_content/SocialPlatform.API",
+      "RelativePath": "images/b607b1a0-d4a9-4e51-8392-8326c82cb6d0.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b607b1a0-d4a9-4e51-8392-8326c82cb6d0.jpg"
+    }
+  ]
+}

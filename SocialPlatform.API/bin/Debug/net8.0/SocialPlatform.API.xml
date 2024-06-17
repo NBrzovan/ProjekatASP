@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SocialPlatform.API</name>
+    </assembly>
+    <members>
+        <member name="M:SocialPlatform.API.Controllers.AnswersController.Post(SocialPlatform.Application.DTO.Create.CreateAnswerDTO,SocialPlatform.Application.UseCases.Answers.ICreateAnswerCommand)">
+            <summary>
+            Endpoint for creating a new answer.
+            </summary>
+            <param name="data">Data for creating the answer.</param>
+            <param name="command">Command for creating the answer.</param>
+            <returns>Status code 201 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.AnswersController.Put(System.Int32,SocialPlatform.Application.DTO.Update.UpdateAnswerDTO,SocialPlatform.Application.UseCases.Answers.IUpdateAnswerCommand)">
+            <summary>
+            Endpoint for updating an existing answer.
+            </summary>
+            <param name="id">ID of the answer to update.</param>
+            <param name="data">Data for updating the answer.</param>
+            <param name="command">Command for updating the answer.</param>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.AnswersController.Delete(System.Int32,SocialPlatform.Application.UseCases.Answers.IDeleteAnswerCommand)">
+            <summary>
+            Endpoint for deleting an answer by ID.
+            </summary>
+            <param name="id">ID of the answer to delete.</param>
+            <param name="command">Command for deleting the answer.</param>
+            <returns>Status code 204 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.AuthController.Post(SocialPlatform.API.DTO.AuthRequestDTO)">
+            <summary>
+            Endpoint for creating a new authentication token.
+            </summary>
+            <param name="request">The authentication request.</param>
+            <returns>The authentication token.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.AuthController.Delete(SocialPlatform.API.Core.ITokenStorage)">
+            <summary>
+            Endpoint for delete the current authentication token.
+            </summary>
+            <param name="storage">The token storage.</param>
+            <returns>No content if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.CommunitiesController.Get(SocialPlatform.Application.DTO.Read.PagedSearchDTO,SocialPlatform.Application.UseCases.Communities.IGetCommunitiesQuery)">
+            <summary>
+            Endpoint for retrieving communities with optional pagination.
+            </summary>
+            <param name="search">Search criteria for paginating communities.</param>
+            <param name="query">Query for retrieving communities.</param>
+            <returns>List of communities.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.CommunitiesController.Post(SocialPlatform.Application.DTO.Create.CreateCommunityDTO,SocialPlatform.Application.UseCases.Communities.ICreateCommunityCommand)">
+            <summary>
+            Endpoint for creating a new community.
+            </summary>
+            <param name="data">Data for creating the community.</param>
+            <param name="command">Command for creating the community.</param>
+            <returns>Status code 201 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.CommunitiesController.Delete(System.Int32,SocialPlatform.Application.UseCases.Communities.IDeleteCommunityCommand)">
+            <summary>
+            Endpoint for deleting a community by ID.
+            </summary>
+            <param name="id">ID of the community to delete.</param>
+            <param name="command">Command for deleting the community.</param>
+            <returns>Status code 204 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.FollowingsController.Post(SocialPlatform.Application.DTO.Create.CreateFollowDTO,SocialPlatform.Application.UseCases.Followings.ICreateFollowCommand)">
+            <summary>
+            Endpoint for creating a new follow relationship.
+            </summary>
+            <param name="data">Data for creating the follow relationship.</param>
+            <param name="command">Command for creating the follow relationship.</param>
+            <returns>Status code 201 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.FollowingsController.Delete(System.Int32,SocialPlatform.Application.UseCases.Followings.IDeleteFollowCommand)">
+            <summary>
+            Endpoint for deleting a follow relationship by ID.
+            </summary>
+            <param name="id">ID of the follow relationship to delete.</param>
+            <param name="command">Command for deleting the follow relationship.</param>
+            <returns>Status code 204 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.FollowingsController.FollowCommunity(SocialPlatform.Application.DTO.Create.CreateFollowCommunityDTO,SocialPlatform.Application.UseCases.Followings.ICreateFollowCommunityCommand)">
+            <summary>
+            Endpoint for following a community.
+            </summary>
+            <param name="data">Data for following the community.</param>
+            <param name="command">Command for following the community.</param>
+            <returns>Status code 201 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.FollowingsController.UnfollowCommunity(System.Int32,SocialPlatform.Application.UseCases.Followings.IDeleteFollowCommunityCommand)">
+            <summary>
+            Endpoint for unfollowing a community.
+            </summary>
+            <param name="data">ID of the community to unfollow.</param>
+            <param name="command">Command for unfollowing the community.</param>
+            <returns>Status code 204 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.LogsController.GetAuditLogs(SocialPlatform.Application.DTO.UseCaseLogsPagedSearchDTO,SocialPlatform.Application.UseCases.Logs.IGetUseCaseLogsQuery)">
+            <summary>
+            Endpoint for retrieving audit logs.
+            </summary>
+            <returns>OK response.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.LogsController.GetErrorById(System.Guid,SocialPlatform.Application.UseCases.Logs.IGetErrorLogQuery)">
+            <summary>
+            Endpoint for retrieving a specific error by ID.
+            </summary>
+            <param name="id">ID of error to retrieve.</param>
+            <param name="query">Query for retrieving the error.</param>
+            <returns>The error informations with the specified ID.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.QuestionsController.Get(SocialPlatform.Application.DTO.QuestionPagedSearchDTO,SocialPlatform.Application.UseCases.Questions.IGetQuestionsQuery)">
+            <summary>
+            Endpoint for retrieving questions.
+            </summary>
+            <param name="search">Search criteria for questions.</param>
+            <param name="query">Query for retrieving questions.</param>
+            <returns>OK response with questions.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.QuestionsController.GetById(System.Int32,SocialPlatform.Application.UseCases.Questions.IGetQuestionQuery)">
+            <summary>
+            Endpoint for retrieving a question by ID.
+            </summary>
+            <param name="id">ID of the question to retrieve.</param>
+            <param name="query">Query for retrieving the question.</param>
+            <returns>OK response with the question.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.QuestionsController.Post(SocialPlatform.Application.DTO.Create.CreateQuestionDTO,SocialPlatform.Application.UseCases.Questions.ICreateQuestionCommand)">
+            <summary>
+            Endpoint for creating a new question.
+            </summary>
+            <param name="data">Data for creating the question.</param>
+            <param name="command">Command for creating the question.</param>
+            <returns>Status code 201 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.QuestionsController.Put(System.Int32,SocialPlatform.Application.DTO.Update.UpdateQuestionDTO,SocialPlatform.Application.UseCases.Questions.IUpdateQuestionCommand)">
+            <summary>
+            Endpoint for updating an existing question.
+            </summary>
+            <param name="id">ID of the question to update.</param>
+            <param name="data">Data for updating the question.</param>
+            <param name="command">Command for updating the question.</param>
+            <returns>Status code 204 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.QuestionsController.Delete(System.Int32,SocialPlatform.Application.UseCases.Questions.IDeleteQuestionCommand)">
+            <summary>
+            Endpoint for deleting a question by ID.
+            </summary>
+            <param name="id">ID of the question to delete.</param>
+            <param name="command">Command for deleting the question.</param>
+            <returns>Status code 204 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.ReactionsController.CreateLike(SocialPlatform.Application.DTO.Create.CreateReactionDTO,SocialPlatform.Application.UseCases.Reactions.ICreateLikeReactionCommand)">
+            <summary>
+            Endpoint for creating a like reaction.
+            </summary>
+            <param name="data">Data for creating the like reaction.</param>
+            <param name="command">Command for creating the like reaction.</param>
+            <returns>Status code 201 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.ReactionsController.CreateDislike(SocialPlatform.Application.DTO.Create.CreateReactionDTO,SocialPlatform.Application.UseCases.Reactions.ICreateDislikeReactionCommand)">
+            <summary>
+            Endpoint for creating a dislike reaction.
+            </summary>
+            <param name="data">Data for creating the dislike reaction.</param>
+            <param name="command">Command for creating the dislike reaction.</param>
+            <returns>Status code 201 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.ReactionsController.Delete(System.Int32,SocialPlatform.Application.UseCases.Reactions.IDeleteReactionCommand)">
+            <summary>
+            Endpoint for deleting a reaction by ID.
+            </summary>
+            <param name="id">ID of the reaction to delete.</param>
+            <param name="command">Command for deleting the reaction.</param>
+            <returns>Status code 204 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.TagsController.Get(SocialPlatform.Application.DTO.Read.PagedSearchDTO,SocialPlatform.Application.UseCases.Tags.IGetTagsQuery)">
+            <summary>
+            Endpoint for retrieving tags.
+            </summary>
+            <param name="search">Search parameters for filtering tags.</param>
+            <param name="query">Query for retrieving tags.</param>
+            <returns>List of tags.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.TagsController.Post(SocialPlatform.Application.DTO.Create.CreateTagDTO,SocialPlatform.Application.UseCases.Tags.ICreateTagCommand)">
+            <summary>
+            Endpoint for creating a new tag.
+            </summary>
+            <param name="data">Data for creating the tag.</param>
+            <param name="command">Command for creating the tag.</param>
+            <returns>Status code 201 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.TagsController.Delete(System.Int32,SocialPlatform.Application.UseCases.Tags.IDeleteTagCommand)">
+            <summary>
+            Endpoint for deleting a tag by ID.
+            </summary>
+            <param name="id">ID of the tag to delete.</param>
+            <param name="command">Command for deleting the tag.</param>
+            <returns>Status code 204 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.TopicsController.Get(SocialPlatform.Application.DTO.Read.PagedSearchDTO,SocialPlatform.Application.UseCases.Topics.IGetTopicsQuery)">
+            <summary>
+            Endpoint for retrieving topics.
+            </summary>
+            <param name="search">Search parameters for filtering topics.</param>
+            <param name="query">Query for retrieving topics.</param>
+            <returns>List of topics.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.TopicsController.Post(SocialPlatform.Application.DTO.Create.CreateTopicDTO,SocialPlatform.Application.UseCases.Topics.ICreateTopicCommand)">
+            <summary>
+            Endpoint for creating a new topic.
+            </summary>
+            <param name="data">Data for creating the topic.</param>
+            <param name="command">Command for creating the topic.</param>
+            <returns>Status code 201 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.TopicsController.Delete(System.Int32,SocialPlatform.Application.UseCases.Topics.IDeleteTopicCommand)">
+            <summary>
+            Endpoint for deleting a topic by ID.
+            </summary>
+            <param name="id">ID of the topic to delete.</param>
+            <param name="command">Command for deleting the topic.</param>
+            <returns>Status code 204 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.UsersController.Get(SocialPlatform.Application.DTO.UserPagedSearchDTO,SocialPlatform.Application.UseCases.Users.IGetUsersQuery)">
+            <summary>
+            Endpoint for retrieving users.
+            </summary>
+            <param name="search">Search parameters for filtering users.</param>
+            <param name="query">Query for retrieving users.</param>
+            <returns>List of users.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.UsersController.GetById(System.Int32,SocialPlatform.Application.UseCases.Users.IGetUserQuery)">
+            <summary>
+            Endpoint for retrieving a user by ID.
+            </summary>
+            <param name="id">ID of the user to retrieve.</param>
+            <param name="query">Query for retrieving the user.</param>
+            <returns>The user with the specified ID.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.UsersController.Post(SocialPlatform.API.DTO.CreateUserAvatarDTO,SocialPlatform.Application.UseCases.Users.ICreateUserCommand)">
+            <summary>
+            Endpoint for creating a new user.
+            </summary>
+            <param name="data">Data for creating the user.</param>
+            <param name="command">Command for creating the user.</param>
+            <returns>Status code 201 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.UsersController.Put(System.Int32,SocialPlatform.Application.DTO.Update.UpdateUserDTO,SocialPlatform.Application.UseCases.Users.IUpdateUserCommand)">
+            <summary>
+            Endpoint for updating a user by ID.
+            </summary>
+            <param name="id">ID of the user to update.</param>
+            <param name="data">Data for updating the user.</param>
+            <param name="command">Command for updating the user.</param>
+            <returns>Status code 204 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.UsersController.ModifyAccess(System.Int32,SocialPlatform.Application.DTO.Update.UpdateUserAccessDTO,SocialPlatform.Application.UseCases.Users.IUpdateUserAccessCommand)">
+            <summary>
+            Endpoint for updating a use cases for user by ID.
+            </summary>
+            <param name="id">ID of the user to update.</param>
+            <param name="command">Command for updating the user use cases.</param>
+            <returns>Status code 204 if successful.</returns>
+        </member>
+        <member name="M:SocialPlatform.API.Controllers.UsersController.Delete(System.Int32,SocialPlatform.Application.UseCases.Users.IDeleteUserCommand)">
+            <summary>
+            Endpoint for deleting a user by ID.
+            </summary>
+            <param name="id">ID of the user to delete.</param>
+            <param name="command">Command for deleting the user.</param>
+            <returns>Status code 204 if successful.</returns>
+        </member>
+    </members>
+</doc>

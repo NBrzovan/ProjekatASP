@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Nikola\\Desktop\\ProjekatASP\\ASP\\SocialPlatform.API\\wwwroot\\images\\b607b1a0-d4a9-4e51-8392-8326c82cb6d0.jpg",
+      "PackagePath": "staticwebassets\\images\\b607b1a0-d4a9-4e51-8392-8326c82cb6d0.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SocialPlatform.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SocialPlatform.API.props",
+      "PackagePath": "build\\SocialPlatform.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SocialPlatform.API.props",
+      "PackagePath": "buildMultiTargeting\\SocialPlatform.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SocialPlatform.API.props",
+      "PackagePath": "buildTransitive\\SocialPlatform.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

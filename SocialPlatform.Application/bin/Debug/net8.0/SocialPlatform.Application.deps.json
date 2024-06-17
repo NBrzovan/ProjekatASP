@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SocialPlatform.Application/1.0.0": {
+        "dependencies": {
+          "SocialPlatform.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SocialPlatform.Application.dll": {}
+        }
+      },
+      "SocialPlatform.Domain/1.0.0": {
+        "runtime": {
+          "SocialPlatform.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SocialPlatform.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SocialPlatform.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
