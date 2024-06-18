@@ -29,6 +29,7 @@ namespace SocialPlatform.API.Core
                 x.FirstName,
                 x.LastName,
                 x.Id,
+                x.Email,
                 UseCaseIds = x.UseCases.Select(x => x.UseCaseId)
             }).FirstOrDefault();
 
@@ -52,6 +53,7 @@ namespace SocialPlatform.API.Core
                  new Claim(JwtRegisteredClaimNames.Iss, _settings.Issuer, ClaimValueTypes.String),
                  new Claim(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64),
                  new Claim("Username", user.Username),
+                 new Claim("Email", user.Email),
                  new Claim("FirstName", user.FirstName),
                  new Claim("LastName", user.LastName),
                  new Claim("Id", user.Id.ToString()),
